@@ -15,6 +15,17 @@ body{
 	max-width: 600px;
 	margin-bottom: 30px;
 }
+.progress-bar-1{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 6px;
+	width: 100%;
+	background-color: #e0e0e0;
+	z-index: -1;
+	transition: width 0.4s ease;
+	transform: translateY(-50%);
+}
 .progress-bar{
 	position: absolute;
 	top: 50%;
@@ -29,13 +40,14 @@ body{
 .circle{
 	width: 40px;
 	height: 40px;
-	background-color: #e0e0e0;
+	/* background-color: #e0e0e0; */
+	background-color: white;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.4s ease;
-	border: 3px solid transparent;
+	border: 3px solid #e0e0e0;
 }
 .circle.active{
 	background-color: white;
